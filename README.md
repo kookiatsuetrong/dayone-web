@@ -12,25 +12,25 @@ dayone-web
 `-- jetty.jar
 `-- pom.xml
 `-- src
-	`-- main
-		`-- java
-		`   `-- web
-		`       `-- Start.java
-		`       `-- CharacterFilter.java
-		`-- webapp
-			`-- public
-			`   `-- css
-			`   `   `-- bootstrap.css
-			`   `-- js
-			`   `   `-- bootstrap.js
-			`   `-- main.css
-			`-- theme
-			`   `-- index.html
-			`   `-- support.html
-			`   `-- contact.html
-			`-- WEB-INF
-				`-- web.xml
-				`-- web-servlet.xml
+    `-- main
+        `-- java
+        `   `-- web
+        `       `-- Start.java
+        `       `-- CharacterFilter.java
+        `-- webapp
+            `-- public
+            `   `-- css
+            `   `   `-- bootstrap.css
+            `   `-- js
+            `   `   `-- bootstrap.js
+            `   `-- main.css
+            `-- theme
+            `   `-- index.html
+            `   `-- support.html
+            `   `-- contact.html
+            `-- WEB-INF
+                `-- web.xml
+                `-- web-servlet.xml
 
 ```
 
@@ -49,15 +49,14 @@ For Windows:
 ## Windows Tools
 
 ```
-C:\
-    `-- tools
-    `   `-- jdk-14
-    `   `   `-- bin
-    `   `       `-- java.exe
-    `   `       `-- javac.exe
-    `   `       `-- jshell.exe
-    `   `            ...
-    `   `-- apache-maven
-    `       `-- bin
-    `           `-- mvn
+`-- tools
+`   `-- jdk-14
+`   `   `-- bin
+`   `       `-- java.exe
+`   `       `-- javac.exe
+`   `       `-- jshell.exe
+`   `            ...
+`   `-- apache-maven
+`       `-- bin
+`           `-- mvn
 ```
