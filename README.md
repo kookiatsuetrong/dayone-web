@@ -49,14 +49,14 @@ For Windows:
 ## Windows Tools
 
 ```
-`-- tools
-`   `-- jdk-14
-`   `   `-- bin
-`   `       `-- java.exe
-`   `       `-- javac.exe
-`   `       `-- jshell.exe
-`   `            ...
-`   `-- apache-maven
-`       `-- bin
-`           `-- mvn
+C:\tools
+   `-- jdk-14
+   `   `-- bin
+   `       `-- java.exe
+   `       `-- javac.exe
+   `       `-- jshell.exe
+   `            ...
+   `-- apache-maven
+       `-- bin
+           `-- mvn
 ```
