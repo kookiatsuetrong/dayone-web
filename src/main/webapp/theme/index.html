@@ -1,0 +1,710 @@
+<#ftl encoding="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShopOS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link href="/public/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/public/main.css" rel="stylesheet" />
+	<link rel="icon" href="/public/shop.png" />
+
+	<meta property="og:title" content="ShopOS" />
+	<meta property="og:type"  content="website" />
+	<meta property="og:url"   content="https://codestar.work" />
+	<meta property="og:image"            content="https://codestar.work/dayone.png" />
+	<meta property="og:image:secure_url" content="https://codestar.work/dayone.png" />
+	<meta property="og:image:type"       content="image/png" />
+	<meta property="og:image:width"      content="1000" />
+	<meta property="og:image:height"     content="1000" />
+	<meta property="og:description"      content="The most flexible ecommerce platform." />
+
+</head>
+<body>
+
+<#if language == "thai" >
+
+
+<#else>
+
+
+</#if>
+
+	
+<header>
+	<div class="container">
+		<nav>
+			<a href="/">
+				ShopOS
+			</a>
+
+			<#if language == "thai" >
+			<span class="right">
+			<a href="/change-language?value=english">English</a>
+			</span>
+			<#else>
+			<span class="right thai">
+			<a class="thai" href="/change-language?value=thai">ภาษาไทย</a>
+			</span>
+			</#if>
+		</nav>
+	</div>
+</header>
+
+<div class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-7">
+				<br/><br/>
+				<#if language == "thai" >
+
+				<h1>ShopOS</h1>
+				<h3 class="thai">แพลตฟอร์มที่ขายดีตลอดไป</h3>
+				<br/>
+				<a href="/" class="signup-button thai">เริ่มต้นใช้งาน</a>
+
+				<#else>
+
+				<h1>ShopOS</h1>
+				<h3>Make Platform Great Forever</h3>
+				<br/>
+				<a href="/" class="signup-button">Get Started</a>
+
+				</#if>
+			</div>
+			<div class="col-12 col-md-5">
+				<br/>
+				<img src="/public/online.png" />
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+.banner {
+	background:var(--main-color); 
+	color:white; 
+	padding: 2rem 0 2rem 0;
+	overflow: hidden;
+}
+.banner h1 {
+	margin-top: 4rem;
+	text-shadow: 0 0.05rem 0.2rem #333;
+}
+.banner h3 {
+	text-shadow: 0 0.05rem 0.2rem #333;
+}
+.banner img {
+	transition: transform 0.1s linear;
+}
+.banner img:hover {
+	transform: scale(1.1);
+}
+a.signup-button {
+	padding: .5rem 1rem;
+	border-radius: 2rem;	background: none;
+	color: white;
+	border: 2px solid white;
+	box-shadow: 0 0.1rem 0.2rem var(--main-color-darker);
+}
+a.signup-button.thai {
+	padding: .30rem 1rem 0.20rem 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+a.signup-button:hover {
+	background: white;
+	color: var(--main-color-darker);
+	border: 2px solid var(--main-color-darker);
+	box-shadow: 0 0.1rem 0.25rem #555;
+}
+</style>
+
+
+<div class="zig-zag">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-8">
+				<#if language == "thai" >
+				
+				<br/>
+				<h4 class="thai">สร้างแพลตฟอร์มเอง ควบคุมทุกอย่างได้เอง</h4>
+				<p class="thai">
+					เมื่อเริ่มขายสินค้าออนไลน์บนแพลตฟอร์มทั่วไป
+					ทุกคนจะประสบปัญหาเหมือนกัน คือ พอขายสินค้าไปซักพัก 
+					ก็จะมีสินค้าที่คล้ายกันแต่ราคาถูกกว่า มาขายตัดราคา
+					เพราะแพลตฟอร์มทั่วไป จะแอบดูข้อมูลการขายสินค้าทั้งหมด
+					ทำให้รู้ว่าสินค้าตัวไหนขายดีหรือไม่ดี สินค้าตัวไหนมีคนเข้าดูกี่คน
+					ถ้าไม่ต้องการให้ใครมาแอบดูข้อมูลพวกนี้ ก็ต้องสร้างร้านค้าออนไลน์ขึ้นมาเอง
+				</p>
+				<p class="thai">
+					ShopOS เป็นระบบร้านค้าออนไลน์ ที่ไม่ต้องใช้ร่วมกับใคร 
+					พร้อมใช้งานบนคลาวด์และศูนย์ข้อมูลทุกที่
+					ใช้กับฐานข้อมูลได้ทุกระบบ และที่สำคัญคือ ผู้ใช้สามารถแก้ไขปรับเปลี่ยนได้เอง
+					ไม่จำเป็นต้องสร้างทีมงานให้ปวดหัว ไม่ต้องเสียเวลาพัฒนาระบบขึ้นมาเอง 
+				</p>
+
+				<#else>
+				
+				<br/>
+				<h4>Build your own platform. Protect your business.</h4>
+				<p>
+					Many platforms know your product
+					better than your marketing team.
+					They know which product is good or bad.
+					Some platforms launched their own in-house brand 
+					to beat your product with a lower price.
+					So you must create your own platform to protect
+					your business.
+				</p>
+				<p>
+					ShopOS is an online platform that run on any 
+					cloud provider and data center.
+					No need to share your information with anyone.
+					It works with multiple database management systems
+					including MySQL, SQL Server and Oracle.
+					And you can customize the platform in your style.
+					No need to build a technical team. It is ready to use.
+				</p>	
+				
+				</#if>
+
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img src="/public/meeting.png" />
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img src="/public/deliver.png" />
+			</div>
+			<div class="col-12 col-sm-6 col-md-8">
+
+				<#if language == "thai" >
+
+				<br/>
+				<h4 class="thai">ซอฟต์แวร์ที่ดี คือซอฟต์แวร์ที่ผู้ใช้เข้าใจหลักการทำงาน</h4>
+				<p class="thai">
+					เรามีการฝึกอบรมก่อนใช้งาน เพื่อให้ผู้บริหารเข้าใจหลักการทำงานของระบบ
+					เริ่มตั้งแต่การติดตั้ง การเพิ่มสินค้า การเขียนคำบรรยายให้น่าอ่าน
+					การเพิ่มรูป การปรับเปลี่ยนการแสดงผล รวมถึงการสำรองข้อมูล 
+					เพื่อให้ร้านค้าออนไลน์รองรับการใช้งานได้อย่างมีประสิทธิภาพ
+				</p>
+
+				<#else>
+
+				<br/>
+				<h4>The best software is the one that user understand.</h4>
+				<p>
+					We trained your staffs to understand the platform before using it.
+					Let people understand the internal process is the key to use it efficiently.
+					From installation, 
+					adding products, writing descriptions, uploading photos,
+					customize the web theme and backing up database.
+				</p>
+
+				</#if>
+
+			</div>
+			<div class="col-12 col-sm-6 col-md-8">
+
+				<#if language == "thai" >
+	
+				<br/>
+				<br/>
+				<h4 class="thai">อาวุธลับสำหรับร้านค้าออนไลน์</h4>
+				<p class="thai">
+					ไม่ต้องเสียเวลาในการพัฒนาระบบ เพราะเรามีทีมงานคอยช่วยในทุกขั้นตอน
+					ตั้งแต่การติดตั้งระบบ
+					ย้ายฐานข้อมูลเดิม เพิ่มเติมข้อมูลใหม่ ถ่ายภาพสินค้าให้ดูน่าสนใจ
+					ออกแบบร้านค้าออนไลน์ให้ดูดี รวมถึงการพัฒนาระบบเพิ่มเติมจากมาตรฐานทั่วไป
+				</p>
+
+				<#else>
+	
+				<br/>
+				<br/>
+				<h4>Your secret weapon is here.</h4>
+				<p>
+					We have technical support team to help you every step.
+					From database migration, data entry, 
+					taking photo of products, custom web design,
+					system maintenance and
+					additional software development.
+				</p>
+				
+				</#if>
+
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+				<img src="/public/tablet.png" />
+			</div>
+		</div>
+
+		<#if language == "thai" >
+
+		<a href="/" class="buy-button thai">เริ่มต้นใช้งาน</a>
+
+		<#else>
+
+		<a href="/" class="buy-button">Get Started</a>
+
+		</#if>
+
+		<br/><br/><br/>
+	</div>
+</div>
+<style>
+.zig-zag {
+	overflow: hidden;
+}
+.zig-zag img {
+	transition: transform 0.1s linear;
+}
+.zig-zag img:hover {
+	transform: scale(1.1);
+}
+a.buy-button {
+	background: var(--main-color);
+	color: white;
+	padding: .5rem 1rem;
+	border-radius: 2rem;
+	border: 2px solid var(--main-color-darker);
+}
+a.buy-button.thai {
+	padding: .30rem 1rem 0.10rem 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+a.buy-button:hover {
+	background: white;
+	color: var(--main-color);
+	box-shadow: 0 0.1rem 0.25rem #222;
+}
+</style>
+
+<div class="feature">
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 
+							0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 
+							2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+					</svg>
+
+					<#if language == "thai" >
+						<h2 class="thai">แข็งแกร่ง</h2>
+						<p class="thai"> ทั้งระบบเขียนด้วยภาษา Java
+							ซึ่งเป็นภาษาคอมพิวเตอร์ที่นิยมใช้ในองค์กรขนาดใหญ่
+						</p>
+					<#else>
+						<h2>Stable</h2>
+						<p> Written in Java,
+							a computer language for enterprise web application.
+						</p>
+					</#if>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<circle cx="18" cy="5" r="3"></circle>
+						<circle cx="6" cy="12" r="3"></circle>
+						<circle cx="18" cy="19" r="3"></circle>
+						<line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+						<line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">ยืดหยุ่น</h2>
+						<p class="thai"> ใช้ร่วมกับระบบฐานข้อมูลที่นิยมใช้ เช่น
+							Oracle, MySQL และ SQL Server
+						</p>
+					<#else>
+						<h2>Flexible</h2>
+						<p> Support any database system,
+							including Oracle, MySQL, and SQL Server.
+						</p>
+					</#if>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<rect x="3" y="3" width="7" height="7"></rect>
+						<rect x="14" y="3" width="7" height="7"></rect>
+						<rect x="14" y="14" width="7" height="7"></rect>
+						<rect x="3" y="14" width="7" height="7"></rect>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">อิสระ</h2>
+						<p class="thai"> ทำงานได้บนระบบ Java มาตรฐานทุกตัว 
+							เช่น HotSpot, OpenJ9 และ SapMachine
+						</p>
+					<#else>
+						<h2>Independent</h2>
+						<p> Run on any Java Virtual Machine,
+							such as HotSpot, OpenJ9 and SapMachine.
+						</p>
+					</#if>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+						<polyline points="22 4 12 14.01 9 11.01"></polyline>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">มาตรฐาน</h2>
+						<p class="thai"> ทำงานได้บนเซิร์ฟเวอร์ของ Java
+							ทั้ง Tomcat, GlassFish, WebSphere และ JBoss
+						</p>
+					<#else>
+						<h2>Standard</h2>
+						<p> Ready for any Java web server:
+							Tomcat, GlassFish, WebSphere and JBoss.
+						</p>
+					</#if>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="16 18 22 12 16 6"></polyline>
+						<polyline points="8 6 2 12 8 18"></polyline>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">ปรับแต่ง</h2>
+						<p class="thai"> แก้ไขดัดแปลงส่วนต่างๆได้สะดวกรวดเร็ว 
+							ตามมาตรฐาน CSS และ HTML เรียนรู้ได้ง่าย
+						</p>
+					<#else>
+						<h2>Customize</h2>
+						<p> Easy to customize the web theme using 
+							only CSS and HTML.
+						</p>
+					</#if>
+
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 
+						5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 
+						1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+						</path>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">ปัญหา</h2>
+						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
+						</p>
+					<#else>
+						<h2>Support</h2>
+						<p> The support team is available to fix your 
+							technical problems up on request.
+						</p>
+					</#if>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<rect x="3" y="3" width="18" height="18" rx="2"/>
+						<circle cx="8.5" cy="8.5" r="1.5"/>
+						<path d="M20.4 14.5L16 10 4 20"/>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">ทันสมัย</h2>
+						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
+						</p>
+					<#else>
+						<h2>Modern</h2>
+						<p> The support team is available to fix your 
+							technical problems up on request.
+						</p>
+					</#if>
+				</div>
+			</div>
+			<div class="col-6 col-md-3">
+				<div class="feature-box">
+					<svg width="96" height="96" viewBox="0 0 24 24" 
+						fill="none" stroke="#333" stroke-width="2" 
+						stroke-linecap="round" stroke-linejoin="round">
+						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+					</svg>
+					<#if language == "thai" >
+						<h2 class="thai">ตลอดเวลา</h2>
+						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
+						</p>
+					<#else>
+						<h2>Always</h2>
+						<p> The support team is available to fix your 
+							technical problems up on request.
+						</p>
+					</#if>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	.feature {
+		background: var(--main-color-light);
+		padding: 1rem 0;
+	}
+	.feature-box {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		text-align: center;
+		color: var(--main-color);
+		transition: color 0.1s linear;
+	}
+	.feature-box:hover {
+		color: var(--main-color-darker);
+	}
+	.feature-box svg {
+		margin-bottom: 0.25rem;
+		transition: transform 0.1s linear,
+					stroke 0.1s linear;
+	}
+	.feature-box:hover svg {
+		transform: scale(1.1);
+		stroke: var(--main-color);
+	}
+	.feature-box p {
+		margin-top: -.5rem;
+		transition: color 0.1s linear;
+	}
+	.feature-box:hover p {
+		color: var(--main-color);
+	}
+	.feature-box h2.thai {
+		font-size: 3rem;
+	}
+</style>
+
+
+<div class="container">
+
+	<#if language == "thai" >
+
+	<br/>
+	<h3 class="welcome thai">ตัวอย่างร้านค้า</h3>
+
+	<#else>
+	
+	<br/>
+	<h3 class="welcome">Sample Shops</h3>
+
+	</#if>
+		
+	<div class="row">
+		<div class="col-6 col-md-3">
+			<div class="sample-item">
+				<img src="/public/sample1.png">
+			</div>
+		</div>
+		<div class="col-6 col-md-3">
+			<div class="sample-item">
+				<img src="/public/sample2.png">
+			</div>
+		</div>
+		<div class="col-6 col-md-3">
+			<div class="sample-item">
+				<img src="/public/sample3.png">
+			</div>
+		</div>
+		<div class="col-6 col-md-3">
+			<div class="sample-item">
+				<img src="/public/sample4.png">
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	.sample-item {
+		height: 20rem;
+		border: 2px solid var(--main-color);
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+		transition: transform 0.1s linear;
+		overflow: hidden;
+		box-shadow: 0 .10rem 0.1rem black;
+	}
+	.sample-item:hover {
+		border: 2px solid var(--main-color-darker);
+		transform: scale(1.05);
+		box-shadow: 0 .25rem 1rem black;
+	}
+</style>
+
+<div class="band">
+	<div class="container">
+
+		<#if language == "thai" >
+
+		<h4 class="thai" style="margin-top:-0.5rem; font-weight: lightest; "
+			>ระบบร้านค้าที่มีความยืดหยุ่นมากที่สุด</h4>
+		<a href="/" class="buy-button thai">เริ่มต้นใช้งาน</a>
+
+		<#else>
+
+		<h4>The most flexible online shop for enterprise.</h4>
+		<a href="/" class="buy-button">Get Started</a>
+
+		</#if>
+
+
+	</div>
+</div>
+
+<style>
+	.band {
+		background: var(--main-color-light); 
+		height: 4rem;
+		padding-top: 1rem;
+	}
+	.band h4 {
+		display: inline-block;
+		font-weight: lighter;
+	}
+	.band a {
+		float: right;
+		padding: 0.25rem 1rem 0.25rem 1rem;
+		margin-top: -0.15rem;
+	}
+	.band a.thai {
+		padding: 0.25rem 1rem 0 1rem;
+		margin-top: -0.25rem;
+	}
+</style>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-3">
+				<h3>ShopOS</h3>
+				<ul>
+					<li><a href="/">Facebook</a></li>
+					<li><a href="/">Instgram</a></li>
+					<li><a href="/">Twitter</a></li>
+					<li><a href="/">Youtube</a></li>
+					<br/>
+					
+						<a href="/change-language?value=english">English</a>
+					
+					<li><a href="/change-language?value=english"
+						>Switch to English</a></li>
+					<li><a class="thai" href="/change-language?value=thai"
+						>เปลี่ยนเป็นภาษาไทย</a></li>
+				</ul>
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-3">
+
+				<#if language == "thai" >
+				<ul>
+					<li class="thai">สินค้า</li>
+					<li><a class="thai" href="/">หน้าหลัก</a></li>
+					<li><a class="thai" href="/">ความเป็นมา</a></li>
+					<li><a class="thai" href="/">รายละเอียดทางเทคนิค</a></li>
+				</ul>
+				<#else>
+				<ul>
+					<li>Products</li>
+					<li><a href="/">Main</a></li>
+					<li><a href="/">About</a></li>
+					<li><a href="/">Technical Detail</a></li>
+				</ul>
+				</#if>
+	
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-3">
+
+				<#if language == "thai" >
+					<ul>
+						<li class="thai">บริการ</li>
+						<li><a class="thai" href="/">ติดตั้งระบบ</a></li>
+						<li><a class="thai" href="/">ฝึกอบรมการใช้งาน</a></li>
+						<li><a class="thai" href="/">ย้ายระบบฐานข้อมูล</a></li>
+						<li><a class="thai" href="/">กรอกข้อมูลสินค้า</a></li>
+						<li><a class="thai" href="/">ออกแบบร้านค้าออนไลน์</a></li>
+						<li><a class="thai" href="/">พัฒนาระบบเพิ่มเติม</a></li>
+					</ul>
+					<#else>
+					<ul>
+						<li>Services</li>
+						<li><a href="/">Installation Service</a></li>
+						<li><a href="/">Training Service</a></li>
+						<li><a href="/">Database Migration</a></li>
+						<li><a href="/">Data Entry Service</a></li>
+						<li><a href="/">Theme Design Service</a></li>
+						<li><a href="/">Software Development</a></li>
+					</ul>
+					</#if>
+					
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-3">
+				<#if language == "thai" >
+				<p class="thai"> ระบบซอฟต์แวร์จากโค้ดสตาร์<br/><br/>
+					ชั้น 3 ศูนย์การค้าแอมพาร์ค<br/>
+					แขวงวังใหม่ เขตปทุมวัน<br/>
+					กรุงเทพ<br/><br/>
+					<a class="thai" href="mailto:support@codestar.work">support@codestar.work</a> <br/>
+					<a class="thai" href="tel:022144620">022144620</a>
+				</p>
+				<#else>
+				<p> ShopOS is a software from CODESTAR <br/><br/>
+					Level 3, The I'm Park Mall<br/>
+					Wang Mai, Patumwan <br/>
+					Bangkok, Thailand<br/><br/>
+					<a href="mailto:support@codestar.work">support@codestar.work</a> <br/>
+					<a href="tel:+6622144620">+66(0)22144620</a>
+				</p>
+				</#if>
+					
+
+			</div>
+		</div>
+
+		<hr/>
+		<div style="text-shadow: none;">
+			Copyright &copy; 2020
+			<span style="float:right;">CODESTAR</span>
+		</div>
+	</div>
+</footer>
+<!--
+<div style="background: #246; 
+	color:white; 
+	padding: 0.5rem 0;
+	">
+	<div class="container">
+		Copyright &copy; 2020
+		<span style="float:right;">CODESTAR</span>
+	</div>
+</div>
+-->
+<script src="/public/jquery.js"></script>
+<script src="/public/popper.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

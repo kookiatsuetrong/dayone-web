@@ -1,0 +1,222 @@
+:root {
+	/*
+	--main-color: rgb(174, 1, 105);
+	--main-color-darker: purple;
+	--main-color-light: #fcf;
+	--text-color: #555;
+	*/
+	--main-color: dodgerblue;
+	--main-color-darker: rgb(26, 84, 199);
+	--main-color-light: #def;
+	--text-color: #444;
+	/*
+	--main-color: #444;
+	--main-color-darker: #000;
+	--main-color-light:#f5f5f5;
+	--text-color: #222;
+	*/
+}
+html {
+	padding: 0;
+}
+body {
+	min-width: 320px;
+}
+hr {
+	border: none;
+	border-bottom: 2px solid var(--main-color-light);
+}
+/*
+h1 { font-weight: 200; }
+h2 { font-weight: 200; }
+h3 { font-weight: 200; }
+h4 { font-weight: 200; }
+h5 { font-weight: 200; }
+h6 { font-weight: 200; }
+p {
+	font-weight: 300;
+	line-height: 2rem;
+}
+*/
+p {
+	color: var(--text-color);
+}
+a {
+	color: var(--text-color);
+	transition: color 0.25s linear;
+}
+a:hover {
+	text-decoration: none;
+}
+label {
+	color: var(--main-color-darker);
+	text-align: right;
+	display: block;
+}
+@media(max-width:767px) {
+	label {
+		text-align: left;
+	}
+}
+img {
+	width: 100%;
+}
+
+header {
+	height: 2.5rem;
+	background: var(--main-color);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+main {
+	padding: 2.5rem 0;
+	min-height: calc(100vh - 18rem);
+}
+footer {
+	min-height: 18rem;
+	padding-top: 2rem;
+	padding-bottom: .5rem;
+	background: var(--main-color-darker);
+	color: white;
+	text-shadow: 0 0.05rem 0.1rem black;
+	line-height: 1.75rem;
+	transition: top 0.25s linear;
+	background: linear-gradient(225deg, var(--main-color), var(--main-color-darker));
+}
+footer hr {
+	margin: 0.25rem 0;
+	border: solid 1px white;
+	opacity: 0.25;
+	/* border-color: var(--main-color-darker); */
+}
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+footer a {
+	font-size: 1rem;
+	color: white;
+	text-shadow: 0 0.05rem #333;
+	transition: padding 0.25s linear;
+}
+footer a:hover {
+	color: var(--main-color-light);
+	padding-left: .25rem;
+}
+footer p {
+	color: white;
+}
+
+svg { 
+	stroke: var(--main-color-darker);
+}
+a svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	stroke: white;
+}
+
+nav {
+	padding-top: 0.4rem;
+}
+nav a {
+	color: white;
+	margin-right: 0.5rem;
+}
+nav a:hover {
+	color: var(--main-color-light);
+}
+nav .right {
+	float: right;
+}
+nav svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	padding-top: 0.1rem;
+	transition: padding 0.25s linear;
+}
+nav svg:hover {
+	padding-top: 0;
+}
+nav svg circle,
+nav svg path,
+nav svg line {
+	transition: stroke 0.25s linear;
+}
+nav svg:hover circle,
+nav svg:hover path,
+nav svg:hover line {
+	stroke: var(--main-color-light);
+}
+
+.btn-primary {
+	background: var(--main-color);
+	border-color: var(--main-color-darker);
+}
+.btn-outline-primary {
+	color: var(--main-color);
+	border-color: var(--main-color-darker);
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+	background: var(--main-color-darker);
+	border-color: var(--main-color);
+}
+.custom-file label {
+	text-align: left;
+}
+
+.product-title {
+
+}
+.product-main {
+	object-position: center;
+	border: 2px solid var(--main-color-light);
+	transition: opacity .2s linear,
+				border .2s linear;
+}
+.product-main:hover {
+	border: 2px solid var(--main-color-darker);
+}
+.product-thumbnail {
+	width: 4rem;
+	height: 4rem;
+	object-fit: cover;
+	margin-bottom: 0.25rem;
+	transition: border .2s linear;
+	border: 2px solid var(--main-color-light);
+}
+.product-thumbnail:hover,
+.product-thumbnail:active {
+	border: 2px solid var(--main-color-darker);
+}
+
+h1.title {
+	display: inline;
+}
+a.top-right {
+	float: right;
+	margin-top: 0.5rem;
+}
+
+
+
+@font-face {
+	font-family: sarabun;
+	src: url(/public/font/sarabun.ttf);
+}
+.thai { font-family: sarabun;}
+h1.thai { font-size: 4.0rem; font-weight: bold; }
+h2.thai { font-size: 3.5rem; font-weight: bold; }
+h3.thai { font-size: 3.0rem; font-weight: bold; }
+h4.thai { font-size: 2.5rem; font-weight: bold; }
+h5.thai { font-size: 2.0rem; }
+h6.thai { font-size: 1.5rem; }
+p.thai  { font-size: 1.5rem; line-height: 1.75rem; }
+li.thai { font-size: 1.5rem; }
+a.thai  { font-size: 1.4rem; }
+
+nav .right.thai {
+	margin-top: -0.15rem;
+}
