@@ -59,4 +59,5 @@ C:\tools
    `-- apache-maven
        `-- bin
            `-- mvn
+           `-- mvn.cmd
 ```
