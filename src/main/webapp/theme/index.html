@@ -320,7 +320,7 @@ a.buy-button:hover {
 					<#if language == "thai" >
 						<h2 class="thai">ยืดหยุ่น</h2>
 						<p class="thai"> ใช้ร่วมกับระบบฐานข้อมูลที่นิยมใช้ เช่น
-							Oracle, MySQL และ SQL Server
+							Oracle, MySQL, PostgreSQL และ SQL Server
 						</p>
 					<#else>
 						<h2>Flexible</h2>
@@ -385,7 +385,7 @@ a.buy-button:hover {
 					<#if language == "thai" >
 						<h2 class="thai">ปรับแต่ง</h2>
 						<p class="thai"> แก้ไขดัดแปลงส่วนต่างๆได้สะดวกรวดเร็ว 
-							ตามมาตรฐาน CSS และ HTML เรียนรู้ได้ง่าย
+							ตามมาตรฐาน CSS และ HTML ทุกคนทำได้
 						</p>
 					<#else>
 						<h2>Customize</h2>
@@ -413,7 +413,7 @@ a.buy-button:hover {
 					<#else>
 						<h2>Support</h2>
 						<p> The support team is available to fix your 
-							technical problems up on request.
+							technical problems 24x7.
 						</p>
 					</#if>
 				</div>
@@ -421,20 +421,21 @@ a.buy-button:hover {
 			<div class="col-6 col-md-3">
 				<div class="feature-box">
 					<svg width="96" height="96" viewBox="0 0 24 24" 
-						fill="none" stroke="#333" stroke-width="2" 
-						stroke-linecap="round" stroke-linejoin="round">
-						<rect x="3" y="3" width="18" height="18" rx="2"/>
-						<circle cx="8.5" cy="8.5" r="1.5"/>
-						<path d="M20.4 14.5L16 10 4 20"/>
+						 fill="none" stroke="#333" stroke-width="2" 
+						 stroke-linecap="round" stroke-linejoin="round">
+							<rect x="5" y="2" width="14" 
+								  height="20" rx="2" ry="2"></rect>
+							<line x1="12" y1="18" x2="12" y2="18"></line>
 					</svg>
 					<#if language == "thai" >
-						<h2 class="thai">ทันสมัย</h2>
-						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
+						<h2 class="thai">มีพร้อม</h2>
+						<p class="thai"> มีแอพทั้ง Android และ iOS พร้อมด้วย Web Services
+							ที่ทำงานร่วมกันได้อย่างดี
 						</p>
 					<#else>
 						<h2>Modern</h2>
-						<p> The support team is available to fix your 
-							technical problems up on request.
+						<p> The application and web services are ready 
+							to launch for both Android and iOS. 
 						</p>
 					</#if>
 				</div>
@@ -442,18 +443,22 @@ a.buy-button:hover {
 			<div class="col-6 col-md-3">
 				<div class="feature-box">
 					<svg width="96" height="96" viewBox="0 0 24 24" 
-						fill="none" stroke="#333" stroke-width="2" 
-						stroke-linecap="round" stroke-linejoin="round">
-						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+						 fill="none" stroke="#333" stroke-width="2" 
+						 stroke-linecap="round" stroke-linejoin="round">
+						<rect x="3" y="4" width="18" height="18" 
+							  rx="2" ry="2"></rect>
+						<line x1="16" y1="2" x2="16" y2="6"></line>
+						<line x1="8" y1="2" x2="8" y2="6"></line>
+						<line x1="3" y1="10" x2="21" y2="10"></line>
 					</svg>
 					<#if language == "thai" >
-						<h2 class="thai">ตลอดเวลา</h2>
-						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
+						<h2 class="thai">ทันที</h2>
+						<p class="thai">ไม่ต้องเสียเวลาอีกต่อไป ทุกอย่างพัฒนาเสร็จเรียบร้อย 
+										พร้อมใช้งานแล้ววันนี้
 						</p>
 					<#else>
-						<h2>Always</h2>
-						<p> The support team is available to fix your 
-							technical problems up on request.
+						<h2>Instantly</h2>
+						<p> No more waiting, everything has been developed and ready to use.
 						</p>
 					</#if>
 				</div>
@@ -497,10 +502,10 @@ a.buy-button:hover {
 	}
 </style>
     
-<div>
+<div class="matrix">
 	<div class="container">
 		<h3 class="topic">Features</h3>
-		<table class="table table-striped">
+		<table class="table">
 			<tr>
 				<th style="width:60%">Features</th>
 				<th>Basic</th>
@@ -523,6 +528,8 @@ a.buy-button:hover {
 				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
 			<tr><td>Basic customizable theme</td>
 				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Domain name and SSL (one year of a .com domain)</td>
+				<td></td><td>Yes</td><td>Yes</td></tr>
 			<tr><td>System setup including cloud, 
 					application server, database, and SSL</td>
 				<td></td><td>Yes</td><td>Yes</td></tr>
@@ -539,13 +546,78 @@ a.buy-button:hover {
 			<tr><td>Mobile application for Android and iOS</td>
 				<td></td><td></td><td>Yes</td></tr>
 			<tr><td>Monthly plan</td>
-				<td>$0</td><td>$249</td><td>$449</td></tr>
+				<td>
+					<span class="price">$0</span>
+					<a class="btn btn-primary btn-sm btn-apply">Download</a>
+				</td>
+				<td>
+					<span class="price">$449</span>
+					<a class="btn btn-primary btn-sm btn-apply">Apply</a>
+				</td>
+				<td>
+					<span class="price">$789</span>
+					<a class="btn btn-primary btn-sm btn-apply">Apply</a>
+				</td>
+			</tr>
 		</table>
 	</div>
 </div>
 <style>
+	.matrix {
+		padding: 0.25rem 0 1rem 0;
+		background-image: url("/public/grid.png");
+		background-repeat: repeat;
+		background-blend-mode: lighten;
+	}
+	.price {
+		margin-bottom: 0.75rem;
+		display: block;
+		color: var(--main-color-darker);
+		font-size: 1.5rem;
+	}
+	a.btn-apply {
+		color: white;
+		border: none;
+		border-radius: 2rem;
+		width: 100%;
+	}
+	a.btn-apply:hover {
+		color: var(--main-color-light);
+	}
 	.table {
-		border: 2px solid var(--main-color-light);
+		border: 2px solid var(--main-color-darker);
+		color: #333;
+		box-shadow: 0 0 .5rem #ccc;
+	}
+	.table td,
+	.table th {
+		padding: 0.25rem .5rem;
+		border: none;
+		text-align: center;
+	}
+	td:first-child,
+	th:first-child {
+		text-align: left;
+	}
+	.table tr {
+		font-size: .90rem;
+		transition: background 0.25s linear;
+	}
+	.table tr:nth-child(odd) {
+		background: white;	
+	}
+	.table tr:nth-child(even) {
+		background: #f8f8f8;	
+	}
+	.table tr:hover {
+		background: #ddd;
+	}
+	.table tr:first-child,
+	.table tr:last-child {
+		background: var(--main-color-light);
+	}
+	.table tr:last-child td {
+		padding-bottom: .75rem;
 	}
 </style>
 
@@ -553,12 +625,10 @@ a.buy-button:hover {
 
 	<#if language == "thai" >
 
-	<br/>
 	<h3 class="topic thai">ตัวอย่างร้านค้า</h3>
 
 	<#else>
 	
-	<br/>
 	<h3 class="topic">Sample Shops</h3>
 
 	</#if>
@@ -587,6 +657,7 @@ a.buy-button:hover {
 	</div>
 </div>
 <style>
+	
 	.sample-item {
 		height: 20rem;
 		border: 2px solid var(--main-color);
@@ -599,7 +670,7 @@ a.buy-button:hover {
 	.sample-item:hover {
 		border: 2px solid var(--main-color-darker);
 		transform: scale(1.05);
-		box-shadow: 0 .25rem 1rem black;
+		box-shadow: 0 .25rem 0.5rem black;
 	}
 </style>
 
@@ -625,13 +696,22 @@ a.buy-button:hover {
 
 <style>
 	.band {
-		background: var(--main-color-light); 
-		height: 4rem;
-		padding-top: 1rem;
+		background: var(--main-color-light);
+		padding: 1rem 0;
 	}
 	.band h4 {
 		display: inline-block;
-		font-weight: lighter;
+		font-weight: light;
+	}
+	@media (max-width:768px) {
+		.band h4 {
+			font-size: 1rem;
+		}
+	}
+	@media (max-width:500px) {
+		.band a {
+			display: none;
+		}
 	}
 	.band a {
 		float: right;
