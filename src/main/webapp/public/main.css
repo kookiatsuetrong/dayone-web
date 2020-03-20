@@ -200,7 +200,10 @@ a.top-right {
 	margin-top: 0.5rem;
 }
 
-
+.topic {
+	margin: 1rem 0;
+	color: var(--main-color-darker);
+}
 
 @font-face {
 	font-family: sarabun;

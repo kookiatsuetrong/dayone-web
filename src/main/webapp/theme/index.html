@@ -496,19 +496,70 @@ a.buy-button:hover {
 		font-size: 3rem;
 	}
 </style>
-
+    
+<div>
+	<div class="container">
+		<h3 class="topic">Features</h3>
+		<table class="table table-striped">
+			<tr>
+				<th style="width:60%">Features</th>
+				<th>Basic</th>
+				<th>Standard</th>
+				<th>Enterprise</th>
+			</tr>
+			<tr><td>Run on any cloud provider, any data center,
+					or any container</td>
+				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Work with standard Java application server, e.g.
+					Tomcat, Jetty, Open Liberty, Wildfly, JBoss, WebSphere</td>
+				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Support standard database management system, e.g. 
+					Oracle, SQL Server, MySQL, PostgreSQL,
+					Apache Derby</td>
+				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Unlimited database space, 
+					unlimited product photo,
+					unlimited member registration</td>
+				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Basic customizable theme</td>
+				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>System setup including cloud, 
+					application server, database, and SSL</td>
+				<td></td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Cloud server space on Google data center</td>
+				<td></td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Free GSuite email setup</td>
+				<td></td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Onsite (or online) staff training</td>
+				<td></td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Technical support</td>
+				<td></td><td>Yes</td><td>Yes</td></tr>
+			<tr><td>Web services and RESTful API</td>
+				<td></td><td></td><td>Yes</td></tr>
+			<tr><td>Mobile application for Android and iOS</td>
+				<td></td><td></td><td>Yes</td></tr>
+			<tr><td>Monthly plan</td>
+				<td>$0</td><td>$249</td><td>$449</td></tr>
+		</table>
+	</div>
+</div>
+<style>
+	.table {
+		border: 2px solid var(--main-color-light);
+	}
+</style>
 
 <div class="container">
 
 	<#if language == "thai" >
 
 	<br/>
-	<h3 class="welcome thai">ตัวอย่างร้านค้า</h3>
+	<h3 class="topic thai">ตัวอย่างร้านค้า</h3>
 
 	<#else>
 	
 	<br/>
-	<h3 class="welcome">Sample Shops</h3>
+	<h3 class="topic">Sample Shops</h3>
 
 	</#if>
 		
