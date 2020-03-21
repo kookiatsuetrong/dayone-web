@@ -300,10 +300,6 @@ a.buy-button:hover {
 					Oracle, SQL Server, MySQL, PostgreSQL,
 					Apache Derby</td>
 				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
-			<tr><td>Unlimited database space, 
-					unlimited product photo,
-					unlimited member registration</td>
-				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
 			<tr><td>Basic customizable theme</td>
 				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
 			<tr><td>Domain name and SSL (one year of a .com domain)</td>
@@ -326,15 +322,43 @@ a.buy-button:hover {
 			<tr><td>Monthly plan</td>
 				<td>
 					<span class="price">$0</span>
-					<a class="btn btn-primary btn-sm btn-apply">Download</a>
+					<button class="btn btn-primary btn-sm btn-apply">Download</button>
 				</td>
 				<td>
 					<span class="price">$449</span>
-					<a class="btn btn-primary btn-sm btn-apply">Apply</a>
+<form action="https://www.paypal.com/cgi-bin/webscr"
+		method="post" name="_xclick">
+	<input type="hidden" name="business"      value="kookiatsuetrong@gmail.com" />
+	<input type="hidden" name="cmd"           value="_xclick-subscriptions" />
+	<input type="hidden" name="item_name"     value="DayOne Standard" />
+	<input type="hidden" name="currency_code" value="USD" />
+	<input type="hidden" name="no_shipping"   value="1" />
+	<input type="hidden" name="return"        value="https://dayone.cloud/thank-you" />
+	<input type="hidden" name="a3"   value="449" />
+	<input type="hidden" name="p3"   value="1" />
+	<input type="hidden" name="t3"   value="M" />
+	<input type="hidden" name="src"  value="1" />
+
+	<button class="btn btn-primary btn-sm btn-apply">Apply</button>
+</form>
 				</td>
 				<td>
 					<span class="price">$789</span>
-					<a class="btn btn-primary btn-sm btn-apply">Apply</a>
+<form action="https://www.paypal.com/cgi-bin/webscr"
+		method="post" name="_xclick">
+	<input type="hidden" name="business"      value="kookiatsuetrong@gmail.com" />
+	<input type="hidden" name="cmd"           value="_xclick-subscriptions" />
+	<input type="hidden" name="item_name"     value="DayOne Enterprise" />
+	<input type="hidden" name="currency_code" value="USD" />
+	<input type="hidden" name="no_shipping"   value="1" />
+	<input type="hidden" name="return"        value="https://dayone.cloud/thank-you" />
+	<input type="hidden" name="a3"   value="789" />
+	<input type="hidden" name="p3"   value="1" />
+	<input type="hidden" name="t3"   value="M" />
+	<input type="hidden" name="src"  value="1" />
+
+	<button class="btn btn-primary btn-sm btn-apply">Apply</button>
+</form>
 				</td>
 			</tr>
 		</table>
@@ -351,13 +375,13 @@ a.buy-button:hover {
 		color: var(--main-color-darker);
 		font-size: 1.5rem;
 	}
-	a.btn-apply {
+	.btn-apply {
 		color: white;
 		border: none;
 		border-radius: 2rem;
 		width: 100%;
 	}
-	a.btn-apply:hover {
+	.btn-apply:hover {
 		color: var(--main-color-light);
 	}
 	.table {
