@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ShopOS</title>
+	<title>DayOne</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<link href="/public/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="/public/main.css" rel="stylesheet" />
 	<link rel="icon" href="/public/shop.png" />
 
-	<meta property="og:title" content="ShopOS" />
+	<meta property="og:title" content="DayOne" />
 	<meta property="og:type"  content="website" />
 	<meta property="og:url"   content="https://codestar.work" />
 	<meta property="og:image"            content="https://codestar.work/dayone.png" />
@@ -35,7 +35,7 @@
 	<div class="container">
 		<nav>
 			<a href="/">
-				ShopOS
+				DayOne
 			</a>
 
 			<#if language == "thai" >
@@ -54,25 +54,23 @@
 <div class="banner">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-7">
+			<div class="col-12 col-md-5">
 				<br/><br/>
 				<#if language == "thai" >
 
-				<h1>ShopOS</h1>
-				<h3 class="thai">แพลตฟอร์มที่ขายดีตลอดไป</h3>
-				<br/>
+				<h1>DayOne</h1>
+				<h5 class="thai">สร้างแพลตฟอร์มที่มีความยืดหยุ่น</h5>
 				<a href="/" class="signup-button thai">เริ่มต้นใช้งาน</a>
 
 				<#else>
 
-				<h1>ShopOS</h1>
-				<h3>Make Platform Great Forever</h3>
-				<br/>
+				<h1>DayOne</h1>
+				<h5>The most flexible eCommerce platform</h5>
 				<a href="/" class="signup-button">Get Started</a>
 
 				</#if>
 			</div>
-			<div class="col-12 col-md-5">
+			<div class="col-12 col-md-7">
 				<br/>
 				<img src="/public/online.png" />
 			</div>
@@ -90,8 +88,9 @@
 	margin-top: 4rem;
 	text-shadow: 0 0.05rem 0.2rem #333;
 }
-.banner h3 {
-	text-shadow: 0 0.05rem 0.2rem #333;
+.banner h5 {
+	text-shadow: 0 0.05rem 0.1rem #333;
+	margin-bottom: 2rem;
 }
 .banner img {
 	transition: transform 0.1s linear;
@@ -137,7 +136,7 @@ a.signup-button:hover {
 					ถ้าไม่ต้องการให้ใครมาแอบดูข้อมูลพวกนี้ ก็ต้องสร้างร้านค้าออนไลน์ขึ้นมาเอง
 				</p>
 				<p class="thai">
-					ShopOS เป็นระบบร้านค้าออนไลน์ ที่ไม่ต้องใช้ร่วมกับใคร 
+					DayOne เป็นระบบร้านค้าออนไลน์ ที่ไม่ต้องใช้ร่วมกับใคร 
 					พร้อมใช้งานบนคลาวด์และศูนย์ข้อมูลทุกที่
 					ใช้กับฐานข้อมูลได้ทุกระบบ และที่สำคัญคือ ผู้ใช้สามารถแก้ไขปรับเปลี่ยนได้เอง
 					ไม่จำเป็นต้องสร้างทีมงานให้ปวดหัว ไม่ต้องเสียเวลาพัฒนาระบบขึ้นมาเอง 
@@ -150,14 +149,14 @@ a.signup-button:hover {
 				<p>
 					Many platforms know your product
 					better than your marketing team.
-					They know which product is good or bad.
+					They know which product and is good which one is bad.
 					Some platforms launched their own in-house brand 
-					to beat your product with a lower price.
-					So you must create your own platform to protect
+					to beat your product with lower price.
+					So you should have your own platform to protect
 					your business.
 				</p>
 				<p>
-					ShopOS is an online platform that run on any 
+					DayOne is an online platform that run on any 
 					cloud provider and data center.
 					No need to share your information with anyone.
 					It works with multiple database management systems
@@ -283,7 +282,7 @@ a.buy-button:hover {
 
 <div class="matrix">
 	<div class="container">
-		<h3 class="topic">Features</h3>
+		<h3 class="topic">Packages</h3>
 		<table class="table">
 			<tr>
 				<th style="width:60%">Features</th>
@@ -314,7 +313,7 @@ a.buy-button:hover {
 				<td></td><td>Yes</td><td>Yes</td></tr>
 			<tr><td>Cloud server space on Google data center</td>
 				<td></td><td>Yes</td><td>Yes</td></tr>
-			<tr><td>Free GSuite email setup</td>
+			<tr><td>Free enterprise email setup</td>
 				<td></td><td>Yes</td><td>Yes</td></tr>
 			<tr><td>Onsite (or online) staff training</td>
 				<td></td><td>Yes</td><td>Yes</td></tr>
@@ -344,7 +343,7 @@ a.buy-button:hover {
 <style>
 	.matrix {
 		padding: 0.25rem 0 1rem 0;
-		box-shadow: 0 0 20rem var(--main-color-light) inset;
+		background: #eee;
 	}
 	.price {
 		margin-bottom: 0.75rem;
@@ -453,10 +452,10 @@ a.buy-button:hover {
 					<svg width="96" height="96" viewBox="0 0 24 24" 
 						fill="none" stroke="#333" stroke-width="2" 
 						stroke-linecap="round" stroke-linejoin="round">
-						<rect x="3" y="3" width="7" height="7"></rect>
-						<rect x="14" y="3" width="7" height="7"></rect>
-						<rect x="14" y="14" width="7" height="7"></rect>
-						<rect x="3" y="14" width="7" height="7"></rect>
+						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 
+						5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 
+						1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+						</path>
 					</svg>
 					<#if language == "thai" >
 						<h2 class="thai">อิสระ</h2>
@@ -515,13 +514,11 @@ a.buy-button:hover {
 			</div>
 			<div class="col-6 col-md-3">
 				<div class="feature-box">
-					<svg width="96" height="96" viewBox="0 0 24 24" 
-						fill="none" stroke="#333" stroke-width="2" 
-						stroke-linecap="round" stroke-linejoin="round">
-						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 
-						5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 
-						1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-						</path>
+					<svg width="96" height="96" viewBox="0 0 24 24" fill="none" 
+						stroke="#333" stroke-width="2" stroke-linecap="round" 
+						stroke-linejoin="round">
+						<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0
+							 1 2-2h14a2 2 0 0 1 2 2z"></path>
 					</svg>
 					<#if language == "thai" >
 						<h2 class="thai">ปัญหา</h2>
@@ -537,12 +534,13 @@ a.buy-button:hover {
 			</div>
 			<div class="col-6 col-md-3">
 				<div class="feature-box">
-					<svg width="96" height="96" viewBox="0 0 24 24" 
-						 fill="none" stroke="#333" stroke-width="2" 
-						 stroke-linecap="round" stroke-linejoin="round">
-							<rect x="5" y="2" width="14" 
-								  height="20" rx="2" ry="2"></rect>
-							<line x1="12" y1="18" x2="12" y2="18"></line>
+					<svg width="96" height="96" viewBox="0 0 24 24" fill="none" 
+						stroke="#333" stroke-width="2" stroke-linecap="round" 
+						stroke-linejoin="round">
+						<circle cx="10" cy="20.5" r="1"/>
+						<circle cx="18" cy="20.5" r="1"/>
+						<path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 
+								2 0 0 0 2-1.6l1.6-8.4H7.1"/>
 					</svg>
 					<#if language == "thai" >
 						<h2 class="thai">มีพร้อม</h2>
@@ -576,7 +574,7 @@ a.buy-button:hover {
 						</p>
 					<#else>
 						<h2>Ready</h2>
-						<p> No more waiting, everything has been developed and ready to use.
+						<p> No more waiting, everything has been developed and ready to launch.
 						</p>
 					</#if>
 				</div>
@@ -599,6 +597,7 @@ a.buy-button:hover {
 		color: var(--main-color-darker);
 	}
 	.feature-box svg {
+		width: 4rem;
 		margin-bottom: 0.25rem;
 		transition: transform 0.1s linear,
 					stroke 0.1s linear;
@@ -614,8 +613,11 @@ a.buy-button:hover {
 	.feature-box:hover p {
 		color: var(--main-color);
 	}
+	.feature-box h2 {
+		font-size: 1.5rem;
+	}
 	.feature-box h2.thai {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 </style>
 
@@ -682,27 +684,27 @@ a.buy-button:hover {
 			<div class="col-12 col-lg-3 col-xl-4">
 
 				<#if language == "thai" >
-					<p>
+					<p class="thai">
 					ข้อดีที่สำคัญของ Java คือ การมีความหลากหลายในการสร้าง Stack
 					ให้ทำงานร่วมกันได้อย่างมีประสิทธิภาพ
 
 					เช่น ระบบบริหารจัดการฐานข้อมูล อาจจะเลือกจาก Oracle, 
-					SQL Server หรือ ใช้ของ Open Source ทำงานได้
+					SQL Server หรือ ใช้ของ Open Source ก็ทำงานได้
 
 					หรือการเลือก Runtime จะใช้ระบบที่มีวางจำหน่าย หรือใช้ของ
-					Open Source จาก SAP หรือ Amazon ก็มีให้เลือกใช้ ไม่ต้องเสียค่าใช้จ่าย
+					Open Source จาก SAP หรือ Amazon ก็มีให้เลือก ไม่ต้องเสียค่าใช้จ่ายเพิ่มเติม
 					</p>
 				<#else>
 					<p>
 					One great benefit in the Java ecosystems is the variety of 
-					technologies that can be use together to build a high 
+					technologies that can be composed to build a high 
 					performance stack. 
 					
 					For examples, the database management system can be 
-					anything from Oracle, SQL Server, or open source system.
+					anything from Oracle, SQL Server, or an open source software.
 					
 					There are also a lot of Java runtime environments in the market, 
-					a commercial product, OpenJDK or from SAP or Amazon.
+					a commercial product, OpenJDK or a runtime from SAP or Amazon.
 					</p>
 				</#if>
 			</div>
@@ -719,16 +721,26 @@ a.buy-button:hover {
 	}
 	.stack td {
 		text-align: center;
+		transition: background 0.1s linear;
+	}
+	.stack td:hover {
+		background: var(--main-color-light);
 	}
 	.stack-logo {
 		margin: 20px;
 		height: 40px;
 		width: auto;
+		transition: transform 0.1s linear;
 	}
 	.stack-logo-os {
 		margin: 30px;
 		height: 20px;
 		width: auto;
+		transition: transform 0.1s linear;
+	}
+	.stack-logo:hover,
+	.stack-logo-os:hover {
+		transform: scale(1.2);
 	}
 </style>
 
@@ -768,7 +780,6 @@ a.buy-button:hover {
 	</div>
 </div>
 <style>
-	
 	.sample-item {
 		height: 20rem;
 		border: 2px solid var(--main-color);
@@ -790,20 +801,18 @@ a.buy-button:hover {
 		<#if language == "thai" >
 
 		<h4 class="thai" style="margin-top:-0.5rem; font-weight: lightest; "
-			>ระบบร้านค้าที่มีความยืดหยุ่นมากที่สุด</h4>
+			>แพลตฟอร์มที่มีความยืดหยุ่นสูง</h4>
 		<a href="/" class="buy-button thai">เริ่มต้นใช้งาน</a>
 
 		<#else>
 
-		<h4>The most flexible online shop for enterprise.</h4>
+		<h4>The most flexible eCommerce platform.</h4>
 		<a href="/" class="buy-button">Get Started</a>
 
 		</#if>
 
-
 	</div>
 </div>
-
 <style>
 	.band {
 		background: var(--main-color-light);
@@ -839,7 +848,7 @@ a.buy-button:hover {
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-3">
-				<h3>ShopOS</h3>
+				<h3>DayOne</h3>
 				<ul>
 					<li><a href="/">Facebook</a></li>
 					<li><a href="/">Instgram</a></li>
@@ -865,6 +874,11 @@ a.buy-button:hover {
 					<li><a class="thai" 
 						   href="https://github.com/kookiatsuetrong/dayone"
 						   >รายละเอียดทางเทคนิค</a></li>
+					<br/>
+					<li><a class="thai" href="/">พื้นฐาน</a></li>
+					<li><a class="thai" href="/">มาตรฐาน</a></li>
+					<li><a class="thai" href="/">องค์กร</a></li>
+	   
 				</ul>
 				<#else>
 				<ul>
@@ -873,6 +887,11 @@ a.buy-button:hover {
 					<li><a 
 							href="https://github.com/kookiatsuetrong/dayone"
 						>Technical Detail</a></li>
+					<br/>
+					<li><a href="/">Basic</a></li>
+					<li><a href="/">Standard</a></li>
+					<li><a href="/">Enterprise</a></li>
+
 				</ul>
 				</#if>
 	
@@ -890,7 +909,7 @@ a.buy-button:hover {
 						<li><a class="thai" href="/">ออกแบบร้านค้าออนไลน์</a></li>
 						<li><a class="thai" href="/">พัฒนาระบบเพิ่มเติม</a></li>
 					</ul>
-					<#else>
+				<#else>
 					<ul>
 						<li>Services</li>
 						<li><a href="/">Installation Service</a></li>
@@ -900,8 +919,7 @@ a.buy-button:hover {
 						<li><a href="/">Theme Design Service</a></li>
 						<li><a href="/">Software Development</a></li>
 					</ul>
-					</#if>
-					
+				</#if>
 			</div>
 
 			<div class="col-12 col-sm-6 col-md-3">
@@ -914,7 +932,7 @@ a.buy-button:hover {
 					<a class="thai" href="tel:022144620">022144620</a>
 				</p>
 				<#else>
-				<p> ShopOS is a software from CODESTAR <br/><br/>
+				<p> DayOne is a software from CODESTAR <br/><br/>
 					Level 3, The I'm Park Mall<br/>
 					Wang Mai, Patumwan <br/>
 					Bangkok, Thailand<br/><br/>
@@ -940,4 +958,3 @@ a.buy-button:hover {
 
 </body>
 </html>
-
