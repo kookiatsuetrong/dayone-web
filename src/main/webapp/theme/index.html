@@ -627,7 +627,7 @@ a.buy-button:hover {
 		<h3 class="topic">Compatible Stacks</h3>
 		</#if>
 		<div class="row">
-			<div class="col-12 col-md-9 col-xl-8">
+			<div class="col-12 col-lg-9 col-xl-8">
 				<table class="table">
 					<tr style="background: #ffffff; ">
 						<td>
@@ -679,8 +679,32 @@ a.buy-button:hover {
 					</tr>
 				</table>
 			</div>
-			<div class="col-12 col-md-3 col-xl-4">
-				ooo
+			<div class="col-12 col-lg-3 col-xl-4">
+
+				<#if language == "thai" >
+					<p>
+					ข้อดีที่สำคัญของ Java คือ การมีความหลากหลายในการสร้าง Stack
+					ให้ทำงานร่วมกันได้อย่างมีประสิทธิภาพ
+
+					เช่น ระบบบริหารจัดการฐานข้อมูล อาจจะเลือกจาก Oracle, 
+					SQL Server หรือ ใช้ของ Open Source ทำงานได้
+
+					หรือการเลือก Runtime จะใช้ระบบที่มีวางจำหน่าย หรือใช้ของ
+					Open Source จาก SAP หรือ Amazon ก็มีให้เลือกใช้ ไม่ต้องเสียค่าใช้จ่าย
+					</p>
+				<#else>
+					<p>
+					One great benefit in the Java ecosystems is the variety of 
+					technologies that can be use together to build a high 
+					performance stack. 
+					
+					For examples, the database management system can be 
+					anything from Oracle, SQL Server, or open source system.
+					
+					There are also a lot of Java runtime environments in the market, 
+					a commercial product, OpenJDK or from SAP or Amazon.
+					</p>
+				</#if>
 			</div>
 		</div>
 	</div>
@@ -691,6 +715,7 @@ a.buy-button:hover {
 		padding: 0.25rem 0 1rem 0;
 		background-image: url("/public/grid.png");
 		background-repeat: repeat;
+		text-shadow: 0 0 1rem #ccc;
 	}
 	.stack td {
 		text-align: center;
@@ -747,7 +772,6 @@ a.buy-button:hover {
 	.sample-item {
 		height: 20rem;
 		border: 2px solid var(--main-color);
-		margin-top: 1rem;
 		margin-bottom: 2rem;
 		transition: transform 0.1s linear;
 		overflow: hidden;
