@@ -17,7 +17,7 @@
 	<meta property="og:image:type"       content="image/png" />
 	<meta property="og:image:width"      content="1000" />
 	<meta property="og:image:height"     content="1000" />
-	<meta property="og:description"      content="The most flexible ecommerce platform." />
+	<meta property="og:description"      content="The most flexible eCommerce platform." />
 
 </head>
 <body>
@@ -59,6 +59,11 @@
 				<#else>
 					<h1>DayOne</h1>
 					<h5>The most flexible eCommerce platform</h5>
+					<p>
+						Everything is ready to launch,
+						including Web, Web Service, Android and iOS application.
+						All in your own brand.
+					</p>
 					<a href="/" class="signup-button">Get Started</a>
 				</#if>
 			</div>
@@ -82,7 +87,10 @@
 }
 .banner h5 {
 	text-shadow: 0 0.05rem 0.1rem #333;
-	margin-bottom: 2rem;
+}
+.banner p {
+	color: white;
+	margin: 3rem 0;
 }
 .banner img {
 	transition: transform 0.1s linear;
@@ -90,19 +98,19 @@
 .banner img:hover {
 	transform: scale(1.1);
 }
-a.signup-button {
+.banner a.signup-button {
 	padding: .5rem 1rem;
 	border-radius: 2rem;	background: none;
 	color: white;
 	border: 2px solid white;
 	box-shadow: 0 0.1rem 0.2rem var(--main-color-darker);
 }
-a.signup-button.thai {
+.banner a.signup-button.thai {
 	padding: .30rem 1rem 0.20rem 1rem;
 	font-size: 1.5rem;
 	font-weight: bold;
 }
-a.signup-button:hover {
+.banner a.signup-button:hover {
 	background: white;
 	color: var(--main-color-darker);
 	border: 2px solid var(--main-color-darker);
@@ -277,10 +285,10 @@ a.buy-button:hover {
 		<h3 class="topic">Packages</h3>
 		<table class="table">
 			<tr>
-				<th style="width:60%">Features</th>
-				<th>Basic</th>
-				<th>Standard</th>
-				<th>Enterprise</th>
+				<th>Features</th>
+				<th style="max-width:3rem">Basic</th>
+				<th style="max-width:5rem">Standard</th>
+				<th style="max-width:8rem">Enterprise</th>
 			</tr>
 			<tr><td>Run on any cloud provider, any data center,
 					or any container</td>
@@ -389,9 +397,14 @@ a.buy-button:hover {
 	}
 	.matrix .table td,
 	.matrix .table th {
-		padding: 0.25rem .5rem;
+		padding: 0.25rem .5rem .5rem .5rem;
 		border: none;
 		text-align: center;
+	}
+	@media (max-width: 480px) {
+		.matrix .table th {
+			font-size: 0.75rem;
+		}
 	}
 	.matrix td:first-child,
 	.matrix th:first-child {
