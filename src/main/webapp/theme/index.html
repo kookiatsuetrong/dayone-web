@@ -24,20 +24,16 @@
 
 <#if language == "thai" >
 
-
 <#else>
-
 
 </#if>
 
-	
 <header>
 	<div class="container">
 		<nav>
 			<a href="/">
 				DayOne
 			</a>
-
 			<#if language == "thai" >
 			<span class="right">
 			<a href="/change-language?value=english">English</a>
@@ -57,17 +53,13 @@
 			<div class="col-12 col-md-5">
 				<br/><br/>
 				<#if language == "thai" >
-
-				<h1>DayOne</h1>
-				<h5 class="thai">สร้างแพลตฟอร์มที่มีความยืดหยุ่น</h5>
-				<a href="/" class="signup-button thai">เริ่มต้นใช้งาน</a>
-
+					<h1>DayOne</h1>
+					<h5 class="thai">สร้างแพลตฟอร์มที่มีความยืดหยุ่น</h5>
+					<a href="/" class="signup-button thai">เริ่มต้นใช้งาน</a>
 				<#else>
-
-				<h1>DayOne</h1>
-				<h5>The most flexible eCommerce platform</h5>
-				<a href="/" class="signup-button">Get Started</a>
-
+					<h1>DayOne</h1>
+					<h5>The most flexible eCommerce platform</h5>
+					<a href="/" class="signup-button">Get Started</a>
 				</#if>
 			</div>
 			<div class="col-12 col-md-7">
@@ -292,40 +284,42 @@ a.buy-button:hover {
 			</tr>
 			<tr><td>Run on any cloud provider, any data center,
 					or any container</td>
-				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+				<td><yes/></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Work with standard Java application server, e.g.
 					Tomcat, Jetty, Open Liberty, WildFly, JBoss, WebSphere</td>
-				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+				<td><yes/></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Support standard database management system, e.g. 
 					Oracle, SQL Server, MySQL, PostgreSQL,
 					Apache Derby</td>
-				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+				<td><yes/></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Basic customizable theme</td>
-				<td>Yes</td><td>Yes</td><td>Yes</td></tr>
+				<td><yes/></td><td><yes/></td><td><yes/></td></tr>
+			<tr><td>System setup on your server i.e. cloud, 
+					application server, database, email, and SSL</td>
+				<td></td><td><yes/></td><td><yes/></td></tr>
+			<!--
 			<tr><td>Domain name and SSL (one year of a .com domain)</td>
-				<td></td><td>Yes</td><td>Yes</td></tr>
-			<tr><td>System setup including cloud, 
-					application server, database, and SSL</td>
-				<td></td><td>Yes</td><td>Yes</td></tr>
+				<td></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Cloud server space on Google data center</td>
-				<td></td><td>Yes</td><td>Yes</td></tr>
+				<td></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Free enterprise email setup</td>
-				<td></td><td>Yes</td><td>Yes</td></tr>
+				<td></td><td><yes/></td><td><yes/></td></tr>
+			-->
 			<tr><td>Onsite (or online) staff training</td>
-				<td></td><td>Yes</td><td>Yes</td></tr>
+				<td></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Technical support</td>
-				<td></td><td>Yes</td><td>Yes</td></tr>
+				<td></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Web services and RESTful API</td>
-				<td></td><td></td><td>Yes</td></tr>
+				<td></td><td></td><td><yes/></td></tr>
 			<tr><td>Mobile application for Android and iOS</td>
-				<td></td><td></td><td>Yes</td></tr>
+				<td></td><td></td><td><yes/></td></tr>
 			<tr><td>Monthly plan</td>
 				<td>
 					<span class="price">$0</span>
 					<button class="btn btn-primary btn-sm btn-apply">Download</button>
 				</td>
 				<td>
-					<span class="price">$449</span>
+					<span class="price">$149</span>
 <form action="https://www.paypal.com/cgi-bin/webscr"
 		method="post" name="_xclick">
 	<input type="hidden" name="business"      value="kookiatsuetrong@gmail.com" />
@@ -334,7 +328,7 @@ a.buy-button:hover {
 	<input type="hidden" name="currency_code" value="USD" />
 	<input type="hidden" name="no_shipping"   value="1" />
 	<input type="hidden" name="return"        value="https://dayone.cloud/thank-you" />
-	<input type="hidden" name="a3"   value="449" />
+	<input type="hidden" name="a3"   value="149" />
 	<input type="hidden" name="p3"   value="1" />
 	<input type="hidden" name="t3"   value="M" />
 	<input type="hidden" name="src"  value="1" />
@@ -343,7 +337,7 @@ a.buy-button:hover {
 </form>
 				</td>
 				<td>
-					<span class="price">$789</span>
+					<span class="price">$249</span>
 <form action="https://www.paypal.com/cgi-bin/webscr"
 		method="post" name="_xclick">
 	<input type="hidden" name="business"      value="kookiatsuetrong@gmail.com" />
@@ -352,7 +346,7 @@ a.buy-button:hover {
 	<input type="hidden" name="currency_code" value="USD" />
 	<input type="hidden" name="no_shipping"   value="1" />
 	<input type="hidden" name="return"        value="https://dayone.cloud/thank-you" />
-	<input type="hidden" name="a3"   value="789" />
+	<input type="hidden" name="a3"   value="249" />
 	<input type="hidden" name="p3"   value="1" />
 	<input type="hidden" name="t3"   value="M" />
 	<input type="hidden" name="src"  value="1" />
@@ -365,6 +359,11 @@ a.buy-button:hover {
 	</div>
 </div>
 <style>
+	yes:after {
+		display: block;
+		text-align: center;
+		content: url("/public/yes.svg");
+	}
 	.matrix {
 		padding: 0.25rem 0 1rem 0;
 		background: #eee;
@@ -384,39 +383,41 @@ a.buy-button:hover {
 	.btn-apply:hover {
 		color: var(--main-color-light);
 	}
-	.table {
+	.matrix .table {
 		border: 2px solid var(--main-color-darker);
 		color: #333;
 		box-shadow: 0 0 .5rem #ccc;
 	}
-	.table td,
-	.table th {
+	.matrix .table td,
+	.matrix .table th {
 		padding: 0.25rem .5rem;
 		border: none;
 		text-align: center;
 	}
-	td:first-child,
-	th:first-child {
+	.matrix td:first-child,
+	.matrix th:first-child {
 		text-align: left;
 	}
-	.table tr {
-		font-size: .90rem;
+	.matrix .table tr {
 		transition: background 0.25s linear;
 	}
-	.table tr:nth-child(odd) {
+	.matrix .table tr:nth-child(odd) {
 		background: white;	
 	}
-	.table tr:nth-child(even) {
+	.matrix .table tr:nth-child(even) {
 		background: #f8f8f8;	
 	}
-	.table tr:hover {
-		background: #ddd;
-	}
-	.table tr:first-child,
-	.table tr:last-child {
+	.matrix .table tr:hover {
 		background: var(--main-color-light);
 	}
-	.table tr:last-child td {
+	.matrix .table tr:first-child {
+		color: white;
+		background: var(--main-color-darker);
+	}
+	.matrix .table tr:last-child {
+		background: var(--main-color-light);
+	}
+	.matrix .table tr:last-child td {
 		padding-bottom: .75rem;
 	}
 </style>
@@ -743,8 +744,12 @@ a.buy-button:hover {
 		background-repeat: repeat;
 		text-shadow: 0 0 1rem #ccc;
 	}
+	.stack table {
+		border: 2px solid #ccc;
+	}
 	.stack td {
 		text-align: center;
+		border: none;
 		transition: background 0.1s linear;
 	}
 	.stack td:hover {
