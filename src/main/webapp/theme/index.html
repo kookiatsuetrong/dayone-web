@@ -290,9 +290,9 @@ a.buy-button:hover {
 		<table class="table">
 			<tr>
 				<th>Features</th>
-				<th style="max-width:3rem">Basic</th>
-				<th style="max-width:5rem">Standard</th>
-				<th style="max-width:8rem">Enterprise</th>
+				<th style="width:6rem">Basic</th>
+				<th style="width:6rem">Standard</th>
+				<th style="width:6rem">Enterprise</th>
 			</tr>
 			<tr><td>Run on any cloud provider, any data center,
 					or any container</td>
@@ -307,13 +307,15 @@ a.buy-button:hover {
 			<tr><td>Basic customizable theme</td>
 				<td><yes/></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>System setup on Google data center i.e. cloud, 
-					application server, database, email, and SSL</td>
+					application server, database, domain, email, and SSL</td>
 				<td></td><td><yes/></td><td><yes/></td></tr>
-			<tr><td>Domain name and SSL (one year of a .com domain)</td>
+			<tr><td>Domain name (.com) and SSL</td>
 				<td></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Onsite (or online) staff training</td>
 				<td></td><td><yes/></td><td><yes/></td></tr>
-			<tr><td>Priority technical support 24/7/365</td>
+			<tr><td>Priority technical support 24 / 7 / 365</td>
+				<td></td><td><yes/></td><td><yes/></td></tr>
+			<tr><td>System upgrade and patches</td>
 				<td></td><td><yes/></td><td><yes/></td></tr>
 			<tr><td>Web services and RESTful API</td>
 				<td></td><td></td><td><yes/></td></tr>
@@ -322,7 +324,7 @@ a.buy-button:hover {
 			<tr><td>Monthly plan</td>
 				<td>
 					<span class="price">$0</span>
-					<button class="btn btn-primary btn-sm btn-apply">Download</button>
+					<button class="btn btn-primary btn-sm btn-apply">Install</button>
 				</td>
 				<td>
 					<span class="price">$149</span>
@@ -376,7 +378,7 @@ a.buy-button:hover {
 		content: url("/public/yes.svg");
 	}
 	.matrix {
-		padding: 0.25rem 0 1rem 0;
+		padding: 0.25rem 0;
 		background: #eee;
 	}
 	.price {
@@ -401,7 +403,7 @@ a.buy-button:hover {
 	}
 	.matrix .table td,
 	.matrix .table th {
-		padding: 0.25rem .5rem .5rem .5rem;
+		padding: 0.5rem;
 		border: none;
 		text-align: center;
 	}
@@ -563,7 +565,8 @@ a.buy-button:hover {
 					</svg>
 					<#if language == "thai" >
 						<h2 class="thai">ปัญหา</h2>
-						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
+						<p class="thai"> ผู้เชี่ยวชาญด้านเทคนิคพร้อมสำหรับทุกปัญหา 
+							เพื่อให้ระบบทำงานอย่างมีประสิทธิภาพ
 						</p>
 					<#else>
 						<h2>Support</h2>
@@ -756,9 +759,14 @@ a.buy-button:hover {
 <style>
 	.stack {	
 		padding: 0.25rem 0 1rem 0;
-		background-image: url("/public/grid.png");
+		background: #345;
+		/* background-image: url("/public/grid.png");
 		background-repeat: repeat;
-		text-shadow: 0 0 1rem #ccc;
+		text-shadow: 0 0 1rem #ccc; */
+	}
+	.stack h3,
+	.stack p {
+		color: white;
 	}
 	.stack table {
 		border: 2px solid #ccc;
