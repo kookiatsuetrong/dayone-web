@@ -1,0 +1,102 @@
+<#ftl encoding="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DayOne</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link href="/public/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/public/main.css" rel="stylesheet" />
+	<link rel="icon" href="/public/shop.png" />
+
+	<meta property="og:title" content="DayOne" />
+	<meta property="og:type"  content="website" />
+	<meta property="og:url"   content="https://dayoneteam.com" />
+	<meta property="og:image"            content="https://dayoneteam.com/public/dayone.png" />
+	<meta property="og:image:secure_url" content="https://dayoneteam.com/public/dayone.png" />
+	<meta property="og:image:type"       content="image/png" />
+	<meta property="og:image:width"      content="1000" />
+	<meta property="og:image:height"     content="1000" />
+	<meta property="og:description"      content="The most flexible eCommerce platform." />
+
+</head>
+<body>
+	<div class="container">
+		<form method="post">
+			<h3>DayOne Subscription</h3>
+			<div class="form-row">
+				
+				<div class="col-12 col-sm-4 col-md-5">
+					<label for="email">Contact Email</label>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<input name="email" id="email" class="form-control" 
+						placeholder="Your Email Address"
+						autofocus />
+				</div>
+
+				<div class="col-12 col-sm-4 col-md-5">
+					<label for="domain">Domain Name</label>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<input name="domain" id="domain" class="form-control" 
+						placeholder="Your Domain Name (your-company.com)" 
+						/>
+				</div>
+
+				<div class="col-12 col-sm-4 col-md-5">
+					<label for="id">Service</label>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<select name="id" 
+							id="id"
+							class="custom-select">
+						<#list services as s>
+							<option value='${s.id}'>${s.name} ($${s.price})</option>
+						</#list>
+					</select>
+				</div>
+
+				<div class="col-12 col-sm-4 col-md-5">
+					<label for="center">Data Center</label>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<select name="center" 
+							id="center"
+							class="custom-select">
+						<#list centers as s>
+							<option>${s.name}</option>
+						</#list>
+					</select>
+				</div>
+
+				<div class="col-12 col-sm-4 col-md-5">
+					<label for="info">Additional Information</label>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<textarea id="info" name="info"
+						class="form-control"
+						placeholder="Additional Information"
+						rows="8"></textarea>
+				</div>
+
+				<div class="col-12 col-sm-4 col-md-5">
+					&nbsp;
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<button class="btn btn-primary">Subscribe</button>
+				</div>
+			</div>
+		</form>
+		<style>
+			label {
+				margin-top: 0.5rem;
+			}
+			select, input, textarea {
+				margin-bottom: 0.5rem;
+			}
+		</style>
+
+	</div>
+</body>
+</html>
