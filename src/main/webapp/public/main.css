@@ -95,7 +95,7 @@ footer ul {
 	padding-left: 0;
 }
 footer a {
-	font-size: 1rem;
+	font-size: .90rem;
 	color: white;
 	text-shadow: 0 0.05rem #333;
 	transition: padding 0.25s linear;
@@ -219,6 +219,7 @@ h6.thai { font-size: 1.5rem; }
 p.thai  { font-size: 1.5rem; line-height: 1.75rem; }
 li.thai { font-size: 1.5rem; }
 a.thai  { font-size: 1.4rem; }
+footer a.thai { font-size: 1.25rem; }
 
 nav .right.thai {
 	margin-top: -0.15rem;
