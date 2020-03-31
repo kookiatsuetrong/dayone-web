@@ -25,6 +25,23 @@
 		<form method="post">
 			<h3>DayOne Subscription</h3>
 			<div class="form-row">
+
+				<div class="col-12 col-sm-4 col-md-5">
+					<label for="id">Service</label>
+				</div>
+				<div class="col-12 col-sm-8 col-md-7">
+					<select name="id" 
+							id="id"
+							class="custom-select">
+						<#list services as s>
+							<#if default?? && default == s.id>
+							<option value='${s.id}' selected>${s.name} ($${s.price})</option>
+							<#else>
+							<option value='${s.id}'>${s.name} ($${s.price})</option>
+							</#if>
+						</#list>
+					</select>
+				</div>
 				
 				<div class="col-12 col-sm-4 col-md-5">
 					<label for="email">Contact Email</label>
@@ -42,19 +59,6 @@
 					<input name="domain" id="domain" class="form-control" 
 						placeholder="Your Domain Name (your-company.com)" 
 						/>
-				</div>
-
-				<div class="col-12 col-sm-4 col-md-5">
-					<label for="id">Service</label>
-				</div>
-				<div class="col-12 col-sm-8 col-md-7">
-					<select name="id" 
-							id="id"
-							class="custom-select">
-						<#list services as s>
-							<option value='${s.id}'>${s.name} ($${s.price})</option>
-						</#list>
-					</select>
 				</div>
 
 				<div class="col-12 col-sm-4 col-md-5">

@@ -35,7 +35,7 @@ class Start {
 	}
 
 	@GetMapping("/subscribe")
-	String showSubscrie(Model model) {
+	String showSubscrie(Model model, Integer code) {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
 		EntityManager manager = factory.createEntityManager();
 		Query queryService = manager.createQuery(
@@ -47,6 +47,8 @@ class Start {
 								"select d from DataCenter d  " +
 								"where d.type = 'Google'     ");
 		model.addAttribute("centers", queryCenter.getResultList());
+
+		model.addAttribute("default", code);
 
 		manager.close();
 		return "subscribe";
@@ -83,13 +85,14 @@ class Start {
 	}
 
 	@GetMapping("/service")
-	String showService(Model model) {
+	String showService(Model model, Integer code) {
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
 		EntityManager manager = factory.createEntityManager();
 		Query queryService = manager.createQuery(
 								"select s from Service s   " +
 								"where s.subscribe = false ");
 		model.addAttribute("services", queryService.getResultList());
+		model.addAttribute("default", code);
 		manager.close();
 		return "service";
 	}
