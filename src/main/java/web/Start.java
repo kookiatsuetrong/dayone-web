@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 class Start {
 
-
 	@GetMapping("/")
 	String showIndex(HttpSession session, Model model) {
 		String current = (String)session.getAttribute("language");
@@ -58,7 +57,7 @@ class Start {
 				String email,
 				String domain,
 				int id,
-				String center,
+				int center,
 				String info)
 	{
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("main");
