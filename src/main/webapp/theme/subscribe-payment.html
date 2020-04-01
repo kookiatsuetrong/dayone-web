@@ -1,52 +1,52 @@
-<#ftl encoding="utf-8">
-<!DOCTYPE html>
-<html>
-<head>
-	<title>DayOne</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<link href="/public/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="/public/main.css" rel="stylesheet" />
-	<link rel="icon" href="/public/shop.png" />
+<#include "header.html">
 
-	<meta property="og:title" content="DayOne" />
-	<meta property="og:type"  content="website" />
-	<meta property="og:url"   content="https://dayoneteam.com" />
-	<meta property="og:image"            content="https://dayoneteam.com/public/dayone.png" />
-	<meta property="og:image:secure_url" content="https://dayoneteam.com/public/dayone.png" />
-	<meta property="og:image:type"       content="image/png" />
-	<meta property="og:image:width"      content="1000" />
-	<meta property="og:image:height"     content="1000" />
-	<meta property="og:description"      content="The most flexible eCommerce platform." />
-
-</head>
-<body>
+<main>
 	<div class="container">
-		
 		<#assign price = 0>
 		<#assign serviceName = "">
 		<#if service??>
 			<#assign price = service.price>
 			<#assign serviceName = service.name>
 		</#if>
-		
-		<br/>
-		<form action="https://www.paypal.com/cgi-bin/webscr"
-				method="post" name="_xclick">
-			<input type="hidden" name="business"      value="kookiatsuetrong@gmail.com" />
-			<input type="hidden" name="cmd"           value="_xclick-subscriptions" />
-			<input type="hidden" name="item_name"     value="${serviceName}" />
-			<input type="hidden" name="currency_code" value="USD" />
-			<input type="hidden" name="no_shipping"   value="1" />
-			<input type="hidden" name="return"        value="https://dayoneteam.com/thank-you" />
-			<input type="hidden" name="a3"   value="${price}" />
-			<input type="hidden" name="p3"   value="1" />
-			<input type="hidden" name="t3"   value="M" />
-			<input type="hidden" name="src"  value="1" />
-		
-			<button class="btn btn-primary btn-sm btn-apply">Apply</button>
-		</form>
-		
+		<h3>Quotation</h3>
+		<table class="table">
+			<tr>
+				<th>Number</th>
+				<th>Description</th>
+				<th>Unit Price</th>
+				<th>Amount</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>${serviceName}</td>
+				<td>$${price}</td>
+				<td>1</td>
+				<td>$${price}</td>
+			</tr>
+		</table>
+
+		<hr />
+		<div style="text-align:right;">
+			<h4>Grand Total: $${price} </h4>
+
+			<form action="https://www.paypal.com/cgi-bin/webscr"
+					method="post" name="_xclick">
+				<input type="hidden" name="business"      value="kookiatsuetrong@gmail.com" />
+				<input type="hidden" name="cmd"           value="_xclick-subscriptions" />
+				<input type="hidden" name="item_name"     value="${serviceName}" />
+				<input type="hidden" name="currency_code" value="USD" />
+				<input type="hidden" name="no_shipping"   value="1" />
+				<input type="hidden" name="return"        value="https://dayoneteam.com/thank-you" />
+				<input type="hidden" name="a3"   value="${price}" />
+				<input type="hidden" name="p3"   value="1" />
+				<input type="hidden" name="t3"   value="M" />
+				<input type="hidden" name="src"  value="1" />
+			
+				<button class="btn btn-primary btn-sm btn-apply">Subscribe Now</button>
+			</form>
+		</div>
 	</div>
-</body>
-</html>
+</main>
+
+<#include "footer.html">

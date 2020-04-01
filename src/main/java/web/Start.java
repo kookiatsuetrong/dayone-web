@@ -124,6 +124,11 @@ class Start {
 		manager.close();
 		return "service-payment";
 	}
+
+	@GetMapping("/thank-you")
+	String showFinalPage() {
+		return "thank-you";
+	}
 	
 	@GetMapping("/check") @ResponseBody
 	String check() {

@@ -1,9 +1,46 @@
+<#include "header.html">
 
+<main>
+	<div class="container">
+		<#assign price = 0>
+		<#assign serviceName = "">
+		<#if service??>
+			<#assign price = service.price>
+			<#assign serviceName = service.name>
+		</#if>
+		<h3>Quotation</h3>
+		<table class="table">
+			<tr>
+				<th>Number</th>
+				<th>Description</th>
+				<th>Unit Price</th>
+				<th>Amount</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>${serviceName}</td>
+				<td>$${price}</td>
+				<td>1</td>
+				<td>$${price}</td>
+			</tr>
+		</table>
 
-<#if order??>
-${order.email}
-</#if>
+		<hr />
+		<div style="text-align:right;">
+			<h4>Grand Total: $${price} </h4>
 
-<#if service??>
-	${service.price}
-</#if>
+			<form action="https://www.paypal.com/cgi-bin/webscr"
+				method="post">
+				<input type="hidden" name="business" value="kookiatsuetrong@gmail.com">
+				<input type="hidden" name="cmd" value="_xclick">
+
+				<input type="hidden" name="item_name" value="${serviceName}">
+				<input type="hidden" name="amount" value="${price}">
+				<input type="hidden" name="currency_code" value="USD">
+				<button class="btn btn-primary">Pay Now</button>
+			</form>
+		</div>
+	</div>
+</main>
+<#include "footer.html">
