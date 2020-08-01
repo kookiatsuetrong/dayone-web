@@ -1,5 +1,7 @@
 # dayone-web
+The main web site of Day One.
 
+![](screen.png)
 
 ## Coding Standard
 - Prefer space over tab
